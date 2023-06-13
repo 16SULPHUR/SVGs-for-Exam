@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>svgs</title>
+    <link  rel="icon" href="https://freepngimg.com/thumb/light/2-2-light-free-download-png.png">
 </head>
 <body>
-    <svg width="100px" height="100px" style="background-color: bisque;" stroke="black">
-        <rect x="20px" y="40px" width="70px" height="50px" fill="pink"/>
+    <svg width="500px" height="500px" style="background-color: bisque;" stroke="black">
+        <rect x="20px" y="40px" width="70px" height="50px" fill="red" opacity="0.5"/>
     </svg>
-    <svg width="100px" height="100px" style="background-color: bisque;" stroke="blue" stroke-width="5px">
+    <svg width="500px" height="500px" style="background-color: bisque;" stroke="blue" stroke-width="5px">
         <circle cx="50px" cy="50px" r="40px" />
     </svg>
-    <svg width="100px" height="100px" style="background-color: bisque;" stroke="blue" stroke-width="1px">
-        <polygon points="5,5 70,5 50,50 20,70 " />
+    <svg width="500px" height="500px" style="background-color: bisque;" stroke="blue" stroke-width="1px">
+        <polygon points="5,5 70,5 50,50 " />
     </svg>
     <svg width="500px" height="500px" style="background-color: bisque;" stroke="blue" stroke-width="1px">
         <filter id="blurIt">
@@ -21,6 +22,19 @@
         </filter>
 
         <image filter="url(#blurIt)" x="50px" y="50px" href="img.jpg" width="400px" height="400px"/>
+    </svg>
+    <svg width="500px" height="500px" style="background-color: bisque;" stroke="blue" stroke-width="1px">
+        <linearGradient id="grad" x="0%" y="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color: yellow;"/>
+            <stop offset="100%" style="stop-color: red;"/>
+        </linearGradient>
+
+        <ellipse cx="250" cy="250" rx="200" ry="100" fill="url(#grad)" />
+    </svg>
+    <svg width="500px" height="500px" style="background-color: bisque;">
+        <text x="100" y="100" fill="red">
+            HELLO WORLD
+        </text>
     </svg>
 </body>
 </html>
