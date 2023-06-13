@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svgs</title>
+</head>
+<body>
+    <svg width="100px" height="100px" style="background-color: bisque;" stroke="black">
+        <rect x="20px" y="40px" width="70px" height="50px" fill="pink"/>
+    </svg>
+    <svg width="100px" height="100px" style="background-color: bisque;" stroke="blue" stroke-width="5px">
+        <circle cx="50px" cy="50px" r="40px" />
+    </svg>
+    <svg width="100px" height="100px" style="background-color: bisque;" stroke="blue" stroke-width="1px">
+        <polygon points="5,5 70,5 50,50 20,70 " />
+    </svg>
+    <svg width="500px" height="500px" style="background-color: bisque;" stroke="blue" stroke-width="1px">
+        <filter id="blurIt">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="6"/>
+        </filter>
+
+        <image filter="url(#blurIt)" x="50px" y="50px" href="img.jpg" width="400px" height="400px"/>
+    </svg>
+</body>
+</html>
